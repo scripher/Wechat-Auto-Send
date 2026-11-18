@@ -26,7 +26,7 @@ def enum_window_name(hwnd, _):
 def copy_txt(txt):
     win32clipboard.OpenClipboard()  # 打开剪贴板
     win32clipboard.EmptyClipboard() # 清空剪贴板
-    win32clipboard.SetClipboardData(win32con.CF_UNICODETEXT, txt) # 写入剪贴板，第一个是一个常量15，表示复制的东西是一系列文件
+    win32clipboard.SetClipboardData(win32con.CF_UNICODETEXT, txt) # 写入剪贴板
     win32clipboard.CloseClipboard() # 关闭剪贴板
     return
 

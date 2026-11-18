@@ -1,4 +1,4 @@
-# wechat_auto_send
+# Wechat-Auto-Send
 
 模拟键盘操作，把电脑中指定路径的文件发给指定的人。
 

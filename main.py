@@ -9,7 +9,7 @@ import keyboard
 
 # =======准备工作=======
 
-# 遍历输出窗口名字，作为被win32gui.EnumWindows调用的函数，用于找到自己想要的窗口的class和title，确保能
+# 遍历输出窗口名字，作为被win32gui.EnumWindows调用的函数，用于找到自己想要的窗口的class和title，确保能正确抓到句柄
 def enum_window_name(hwnd, _):
     title_name = win32gui.GetWindowText(hwnd)
     class_name = win32gui.GetClassName(hwnd)
